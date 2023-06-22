@@ -1,2 +1,106 @@
 /* font-family: 'DM Serif Display', serif;
 font-family: 'Karla', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav>img{
+    position: relative;
+    height: 50%;
+}
+
+nav>ul{
+    display: flex;
+    align-items: center;
+}
+
+nav>ul>li{
+    list-style-type: none;
+    padding: 0 1rem;
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+    color: hsl(273, 4%, 51%);
+}
+
+.btn{
+    display: inline-block;
+    border: 1px solid hsl(270, 9%, 17%);
+    padding: 5px 15px;
+    color: hsl(270, 9%, 17%);
+    font-weight: 700;
+}
+
+
+/* header */
+
+
+
+
+/* section */
+
+section{
+    display: grid;
+    row-gap: 20%;
+    margin-top: 5%;
+    padding: 0 7rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.intro{
+    display: grid;
+    gap: 20%;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    color: hsl(270, 9%, 17%);
+}
+
+.speciality{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.features{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.features img{
+    padding-bottom: 2rem;
+}
+
+.features h3{
+    font-size: 1.5rem;
+    color: hsl(270, 9%, 17%);
+    font-weight: 700;
+}
+
+.features p{
+    padding-right: 3rem;
+    color: hsl(273, 4%, 51%);
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+
