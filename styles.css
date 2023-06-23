@@ -50,6 +50,72 @@ nav>ul>li>a{
 
 /* header */
 
+header{
+    position: relative;
+    background-color: hsl(256, 26%, 20%);
+    display: flex;
+    padding:5rem 8rem;
+    height: 100%;
+    color: hsl(0, 0%, 98%);
+    max-height: 100vh;
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 50%;
+    margin: 10% 10% 5% 0;
+}
+
+.summary>h1{
+    font-size: 4.5rem;
+    line-height: 4rem;
+    padding-right: 6rem;
+}
+
+.summary p{
+    padding-right: 9rem;
+    line-height: 1.3rem;
+}
+
+.summary a{
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 7px 20px;
+    width: 15%;
+    color: #fff;
+    text-decoration: none;
+    z-index: 1;
+}
+
+
+.man-intro{
+    position: absolute;
+    margin-left: auto;
+    top: 20%;
+    right: 10%;
+    z-index: 1;
+}
+
+.right-back{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    height: 90%;
+}
+
+.left-back{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 60%);
+    height: 60%;
+}
+
+
 
 
 
@@ -57,18 +123,19 @@ nav>ul>li>a{
 
 section{
     display: grid;
-    row-gap: 20%;
+    row-gap: 5%;
     margin-top: 5%;
-    padding: 0 7rem;
+    padding: 5rem 7rem;
+    margin: 8rem 0;
     font-family: 'Karla', sans-serif;
+    height: 100vh;
 }
 
 .intro{
     display: grid;
-    gap: 20%;
 }
 
-h1{
+.intro > h1{
     font-size: 4rem;
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
@@ -87,7 +154,7 @@ h1{
 }
 
 .features img{
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .features h3{
@@ -102,5 +169,117 @@ h1{
     font-size: 16px;
     line-height: 1.5rem;
 }
+
+.demo-link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(256, 26%, 20%);
+    position: relative;
+}
+
+.demo-link h2{
+    font-size: 3rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    color: #fff;
+    width: 28vw;
+}
+
+.demo-link a{
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 7px 20px;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.demo-link>img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+}
+
+/* footer */
+
+footer{
+    display: grid;
+    row-gap: 1rem;
+    padding: 3rem 7rem;
+    font-family: 'Karla', sans-serif;
+    position: relative;
+}
+
+footer>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 50%;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    z-index: 1;
+}
+
+.social>img{
+    justify-self: self-start;
+}
+
+.social-links{
+    justify-self: self-end;
+}
+
+.social-links a{
+    margin-right: 1rem;   
+}
+
+hr{
+    border: none;
+    height: .1px;
+    background-color: hsl(273, 4%, 51%);
+    z-index: 1;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.3rem;
+}
+
+.link p{
+    color: hsl(273, 4%, 51%);
+}
+
+.link li{
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.link li a{
+    text-decoration: none;
+    color: hsl(270, 9%, 17%);
+    font-weight: 700;
+}
+
+
+
 
 
