@@ -150,13 +150,18 @@ body {
   
 /* section - hero */
 
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Dark-Violet);
+}
+
 .hero-image img {
     width: 100%;
 }
 
 .hero-content {
     position: relative;
-    background-color: var(--Dark-Violet);
     color: var(--Very-Light-Gray);
     text-align: center;
     padding: 5em 1.6875em;
@@ -182,6 +187,25 @@ body {
     font-weight: 700;
 }
 
+.insur-button {
+    color: var(--Very-Light-Gray);
+    border: 2px solid var(--Very-Light-Gray);
+    padding: 0.6em 1.6875em;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+  
+.insur-button:hover {
+    background-color: var(--Very-Light-Gray);
+    color: var(--Dark-Violet);
+}
+
+.hero-desk-left-bg,
+.hero-desk-rightt-bg {
+  display: none;
+}
+
 .hero-left-bg {
     position: absolute;
     top: 0;
@@ -196,12 +220,6 @@ body {
     height: auto;
 }
 
-hr {
-    margin-top: 10em;
-    width: 50%;
-    height: 2px;
-    background-color: var(--Dark-Grayish-Violet);
-}
 
 /* media query */
 @media (min-width: 900px) {
@@ -227,6 +245,11 @@ hr {
 
     .desk-list:not(:last-child) a {
         color: var(--Dark-Grayish-Violet);
+        transition: color 0.3s ease-in-out;
+    }
+
+    .desk-list:not(:last-child) a:hover {
+        color: var(--Dark-Violet);
     }
 
     .desk-list:last-child a {
@@ -234,12 +257,57 @@ hr {
         border: 2px solid var(--Dark-Violet);
         padding: 0.5em 1.5em;
         color: var(--Dark-Violet);
-        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
-    .desk-list:last-child a:hover,
-    a:focus {
+    .desk-list:last-child a:hover{
         background-color: var(--Dark-Violet);
         color: var(--Very-Light-Gray);
+    }
+
+    .hero {
+        flex-direction: row;
+    }
+    
+    .hero-content {
+        max-width: 33.875rem;
+        margin-left: 10.125em;
+        margin-top: 15em;
+        margin-right: 12em;
+        text-align: left;
+        padding: 0;
+    }
+    
+    .hero-image {
+        position: relative;
+        width: 33.8125rem;
+        height: 40.75rem;
+        top: 10rem;
+        right: 10rem;
+        order: 2;
+    }
+    
+    .hero-image img {
+        content: url("/images/image-intro-desktop.jpg");
+    }
+    
+    .hero-left-bg,
+    .hero-right-bg {
+        display: none;
+    }
+    
+    .hero-desk-left-bg {
+        display: block;
+        position: absolute;
+        height: auto;
+        top: 32rem;
+        left: 0;
+    }
+    
+    .hero-desk-rightt-bg {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 5.0626rem;
     }
 }
