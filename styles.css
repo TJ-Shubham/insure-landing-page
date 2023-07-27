@@ -215,14 +215,89 @@ body {
 
 .hero-right-bg {
     position: absolute;
-    bottom: -14rem;
+    bottom: -12rem;
     right: 0;
     height: auto;
 }
 
+.features {
+    padding: 8.75em 1.6875em;
+    text-align: center;
+}
+  
+.features hr {
+    width: 50%;
+    height: 2px;
+    border: none;
+    background-color: var(--Grayish-Blue);
+}
+  
+.feature-heading {
+    font-size: 2.7rem;
+    font-weight: 400;
+    margin-bottom: 1.97em;
+}
+  
+.feature-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.8125rem;
+}
+  
+.feature img {
+    margin: 0 auto;
+    height: auto;
+}
+  
+.feature h3 {
+    font-size: 1.5rem;
+    margin-top: 1.7em;
+    font-weight: 400;
+}
+  
+.feature p {
+    color: var(--Dark-Grayish-Violet);
+}
+  
+.work-link {
+    margin: 0 1.3875em 8.7em 1.3875em;
+    background-color: var(--Dark-Violet);
+    color: var(--Very-Light-Gray);
+    text-align: center;
+    padding: 4.4em 1em;
+    background-image: url("/images/bg-pattern-how-we-work-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: initial;
+}
+  
+.work-link h1 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
 
 /* media query */
+@media (min-width: 600px) {
+    .feature-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (min-width: 900px) {
+
+    .main-hr {
+        display: block;
+        border: none;
+        background-color: var(--Grayish-Blue);
+        width: 8%;
+        height: 2px;
+        position: absolute;
+        margin-top: 10em;
+        margin-left: 10em;
+    }
+
     header {
         padding: 0 10.125em;
     }
@@ -286,6 +361,10 @@ body {
         right: 10rem;
         order: 2;
     }
+
+    .hero-content > h1 {
+        font-size: 4.47rem;
+    }
     
     .hero-image img {
         content: url("/images/image-intro-desktop.jpg");
@@ -309,5 +388,45 @@ body {
         position: absolute;
         right: 0;
         top: 5.0626rem;
+    }
+
+    /* section - features  */
+    .features {
+        padding: 14.75em 10.175em 8.75em;
+        text-align: left;
+    }
+    
+    .features hr {
+        width: 10%;
+        margin-left: 0;
+    }
+    
+    .feature-heading {
+        font-size: 3rem;
+    }
+    
+    .feature-list {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: start;
+    }
+    
+    .feature img {
+        margin: 0;
+    }
+    
+    /* section - work-link */
+    .work-link {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 10.175em 8.7em;
+        padding: 2.5em 0;
+        background-image: url("/images/bg-pattern-how-we-work-desktop.svg");
+    }
+    
+    .work-link h1 {
+        width: 39%;
+        text-align: left;
+        margin-bottom: 0;
     }
 }
