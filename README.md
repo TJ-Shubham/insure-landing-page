@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Link](https://github.com/TJ-Shubham/insure-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Link](https://tj-shubham.github.io/insure-landing-page/)
 
 ## My process
 
